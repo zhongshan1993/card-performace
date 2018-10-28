@@ -3,6 +3,7 @@ import store from "./store";
 import user from "./images/user.png";
 import "./App.css";
 import { setProfession } from "./actions";
+import Description from "./Description";
 
 class App extends Component {
   handleProfessionUpdate = () => {
@@ -34,10 +35,7 @@ class App extends Component {
         </section>
 
         <section className="User__info">
-          <p>
-            {" "}
-            <span className="faint">I am</span> a {description}
-          </p>
+          <Description />
           <p>
             {" "}
             <span className="faint">I like</span> {likes}
